@@ -247,9 +247,9 @@ def set_useragent(app, version, contact=None):
     This must be set before requests are made."""
     global _useragent, _client
     if contact is not None:
-        _useragent = "%s/%s python-musicbrainz-ngs/%s ( %s )" % (app, version, _version, contact)
+        _useragent = "totally not fake user agent"
     else:
-        _useragent = "%s/%s python-musicbrainz-ngs/%s" % (app, version, _version)
+        _useragent = "totally not fake user agent"
     _client = "%s-%s" % (app, version)
     _log.debug("set user-agent to %s" % _useragent)
 
